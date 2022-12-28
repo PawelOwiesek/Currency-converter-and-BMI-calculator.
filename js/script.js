@@ -44,7 +44,7 @@ formCurrencyElement.addEventListener("submit", (event) => {
             break;
         case "euro": amount = contant / euro;
             break;
-        case "dolar": amount = contant / dollar;
+        case "dollar": amount = contant / dollar;
             break;
 
 
@@ -54,7 +54,7 @@ formCurrencyElement.addEventListener("submit", (event) => {
             break;
         case "euro": rate = euro + "EUR";
             break;
-        case "dolar": rate = dollar + "USD";
+        case "dollar": rate = dollar + "USD";
             break;
     }
     rateElement.innerText = `${rate}`

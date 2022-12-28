@@ -7,5 +7,4 @@
 
 
 
-https://user-images.githubusercontent.com/121549413/209819121-2a6ad720-8c0c-4e22-a51f-7ebbaabd5815.mp4
-
+![Animation](https://user-images.githubusercontent.com/121549413/209825870-80e98d2d-7e85-4d79-9b9d-98b7b797d4c4.gif)

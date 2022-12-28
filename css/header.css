@@ -1,0 +1,34 @@
+.header {
+    color: #2d1dbd;
+    text-align: center;
+}
+
+.header__moneyImg {
+    max-width: 35%;
+    float: left;
+    margin: 5px;
+}
+
+.header__helthImg {
+    max-width: 26%;
+    float: right;
+    margin: 5px;
+}
+
+.header__navigation--unorderedList {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.header__navigation--calculatorBmi {
+    line-height: 1.5;
+    margin: 7px;
+    padding: 2px;
+}
+
+.header__navigation--calculatorCurency {
+    line-height: 1.5;
+    margin: 7px;
+    padding: 2px;
+}

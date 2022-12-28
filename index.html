@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js/script.js"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/sectionCalculatorBmi.css" rel="stylesheet">
+    <link href="css/currencyConverter.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Kalkulator BMI i walut</title>
+</head>
+
+<body class="body">
+    <h1 class="header">Kalkulator BMI i Walut.</h1>
+    <nav class="header__navigation">
+        <p>
+            <img class=header__moneyImg src="https://i.postimg.cc/qvfD5dLj/zloty-polski.jpg" alt="banknoty">
+            <img class="header__helthImg" src="https://i.postimg.cc/tCw1kG12/motywator-52fa7b0e9c5612-09670288.jpg"
+                alt="recepta na zdrowe zycie">
+        </p>
+        <ul class="header__navigation--unorderedList">
+            <li class="header__navigation--calculatorBmi">
+                <a href="#kalkulator-BMI">Kalkulator BMI</a>
+            </li>
+            <li>
+                <a class="header__navigation--calculatorCurency" href="#kalkulator-walut">Kalkulator walut</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="sectionCalculatorBmi">
+        <h2 id="kalkulator-BMI" class="sectionCalculatorBmi__title">Kalkulator BMI</h2>++
+        <h2>Kilka slow na temat zdrowego stylu zycia.</h2>
+        <p class="sectionCalculatorBmi__text">Zdrowe odżywianie – zdrowe odchudzanie
+            Jednym z elementów zdrowego stylu życia jest odżywianie. Warto zwracać uwagę na produkty, jakie wybieramy na
+            co dzień. Żywienie jest tak elementarną składową życia, że aby być zdrowym, trzeba wybierać świadomie i
+            dostarczać sobie właściwych i wartościowych produktów. Liczne choroby cywilizacyjne wynikają z
+            nieprawidłowego odżywiania.
+
+            Badanie opublikowane w renomowanym The Lancet wskazuje, że 20% zgonów na świecie wynika ze złej diety.
+
+            <strong>Według danych Eurostatu 52,3% dorosłych w krajach Unii Europejskiej cierpi na otyłość lub nadwagę .
+                Wśród
+                dzieci grupa otyłych rośnie w zastraszającym tempie. Bardzo widoczne jest to również w Polsce.
+            </strong>
+            Badania wykazują, że zarówno dzieci, jak i dorośli nie przestrzegają zaleceń właściwego odżywiania, nawet
+            tych podstawowych. Często nie jedzą śniadań, nie spożywają posiłków regularnie, w ich diecie za mało jest
+            węglowodanów złożonych, a za dużo energii pochodzi z tłuszczu. Warzywa i owoce spożywane są sporadycznie.
+            Często nadmierna masa ciała nie wynika z tego, ile jemy, ale co jemy. Prawidłowo przygotowana dieta
+            odchudzająca jest tak bogata w zdrowe produkty i różnorodna, że ciężko na niej chodzić głodnym.
+
+            Sama zmiana produktów na korzystne dla zdrowia spowoduje dostarczenie dużo mniejszej ilości kalorii,
+            ograniczy łaknienie cukrów i zmniejszy tzw. ciąg do jedzenia spowodowany ciągłymi wahaniami insuliny we
+            krwi. Dołączenie aktywności fizycznej, chociażby w postaci codziennego godzinnego marszu lub pływania
+            gwarantuje utratę niechcianych kilogramów. Udowodniono zależności między tkanką tłuszczową a podwyższonym
+            ryzykiem raka. Im jej więcej, tym większe.
+            Otyłość to także jeden z głównych czynników ryzyka rozwoju choroby wieńcowej, a także nadciśnienia i
+            cukrzycy, co zwiększa ryzyko zawału i udaru mózgu.
+            <strong> BMI to nie wszystko! Sprawdź obwód talii! Niebezpieczna jest otyłość brzuszna, czyli tkanka
+                tłuszczowa
+                gromadząca się w pasie. U kobiet obwód pasa powyżej 80 cm wiąże się z wzrostem ryzyka powikłań otyłości,
+                natomiast po przekroczeniu wartości 88 cm rozpoczynają się już poważne problemy zdrowotne. U mężczyzn
+                wymiary te wynoszą: 94 i 102 cm.</strong>
+        </p>
+        <form class="sectionCalculatorBmi__form js-form">
+            <fieldset class="sectionCalculatorBmi__field">
+                <legend class="sectionCalculatorBmi__legend">Oblicz swoje BMI</legend>
+                <p>
+                    <label>
+                        <span class="sectionCalculatorBmi__data">Podaj swoj wzrost:</span>
+                        <input class="sectionCalculatorBmi__input js-height" type="number" min="1" step="any">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="sectionCalculatorBmi__data">Podaj swoja wage:</span>
+                        <input class="sectionCalculatorBmi__input js-weight" type="number" min="1" step="any">
+                    </label>
+                </p>
+                <button class="sectionCalculatorBmi__button">Oblicz</button>
+                <p>Twoje BMI wynosi:<strong class="js-bmi"></strong></p>
+            </fieldset>
+        </form>
+    </section>
+    <section class="currencyConverter">
+        <h2 id="kalkulator-walut" class="currencyConverter__title"> Kalkulator walut.</h2>
+        <img class="currencyConverter__funt"
+            src="https://i.postimg.cc/Prm5r22Q/sterta-pi-dziesi-t-funt-w-brytyjski-banknot-w-72169376.jpg" alt="50GBP">
+        <img class="currencyConverter__dollar"
+            src="https://i.postimg.cc/CLPSKXbD/US-one-dollar-bill-obverse-series-2009.jpg" alt="one dollar"><img
+            class="currencyConverter__euro" src="https://i.postimg.cc/wvqFGf3x/50-euro.jpg" alt="50 euro">
+        <form class="js-formCurrency">
+            <fieldset class="currencyConverter__field">
+                <legend class="currencyConverter__legend">Kantor</legend>
+                <p>Wymagane pola oznaczone *</p>
+                <p>
+                    <label>
+                        <span class="currencyConverter__data">Podaj ilosc waluty w zlotowkach:*</span>
+                        <input class="currencyConverter__input js-zlotowki" type="number" min="1" step="any" required>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="currencyConverter__data">Wybierz walute:</span>
+                        <select class="currencyConverter__input js-currency">
+                            <option value="funt">Funt brytyjski</option>
+                            <option value="euro">Euro</option>
+                            <option value="dollar">Dolar amerykanski</option>
+                        </select>
+                    </label>
+                <p>Obecny kurs:<strong class="js-rate"></strong> </p>
+                <button class="currencyConverter__button">Przelicz</button>
+                <p>
+                    Kwota po przeliczeniu:<strong class="js-amount currencyConverter__strong"></strong>
+                </p>
+                <p>Kurs walut czysto teoretyczny, na potrzeby zadania domowego!</p>
+            </fieldset>
+        </form>
+    </section>
+</body>
+
+</html>

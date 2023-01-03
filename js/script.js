@@ -40,23 +40,14 @@ formCurrencyElement.addEventListener("submit", (event) => {
     let currency = currencyElement.value;
     let amount;
     switch (currency) {
-        case "funt": amount = contant / funt;
+        case "funt": amount = contant / funt; rate = funt + "GBP";
             break;
-        case "euro": amount = contant / euro;
+        case "euro": amount = contant / euro; rate = euro + "EUR";
             break;
-        case "dollar": amount = contant / dollar;
-            break;
-
-
-    }
-    switch (currency) {
-        case "funt": rate = funt + "GBP";
-            break;
-        case "euro": rate = euro + "EUR";
-            break;
-        case "dollar": rate = dollar + "USD";
+        case "dollar": amount = contant / dollar; rate = dollar + "USD";
             break;
     }
+
     rateElement.innerText = `${rate}`
     amountElement.innerText = `${amount.toFixed(2)}`
     document.querySelector(".js-formCurrency").reset()

@@ -7,10 +7,10 @@ html {
 }
 
 .body {
-    border: 3px solid #008000;
-    margin: 10px;
-    font-family: "lato"sans-serif;
-    background-color: #6b7883a8;
+    border: 3px solid #000000;
+    margin: 11px;
+    font-family: "lato",sans-serif;
+    background-color: #ffffffa8;
     max-width: 1000px;
     margin: 0 auto;
     padding: 10px;

@@ -1,4 +1,7 @@
-console.log("Witaj wybrancu:)");
+const welcome=()=>{
+    console.log("Hello!");
+}
+welcome();
 // "Ta sekcja dotyczy kalkulatora BMI"
 let formElement = document.querySelector(".js-form");
 let heightElement = document.querySelector(".js-height");
